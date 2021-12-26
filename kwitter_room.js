@@ -1,5 +1,5 @@
  // Your web app's Firebase configuration
- const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyCwazuspz05FW0muKQo-b7C2JsogMIAw-Y",
   authDomain: "twitter-but-kwitter.firebaseapp.com",
   databaseURL: "https://twitter-but-kwitter-default-rtdb.firebaseio.com",
@@ -7,7 +7,7 @@
   storageBucket: "twitter-but-kwitter.appspot.com",
   messagingSenderId: "375803234475",
   appId: "1:375803234475:web:a7f0c40f2d5cfca9b08fee"
-};
+};    
 
 // Initialize Firebases
   firebase.initializeApp(firebaseConfig);
@@ -51,5 +51,5 @@ function redirectToRoomName(name) {
 function logout() {
   localStorage.removeItem("user_name");
   localStorage.removeItem("room_name");
-  window.location.replace("index.html");
-  }
+    window.location = "index.html";
+}
